@@ -36,7 +36,7 @@ function TDLForm({data, createData}){
       <form onSubmit={handleSubmit}>
         <input type="text" name="nuevoTexto" className="nuevoTexto" value={tarea.texto} placeholder="Ingrese nueva tarea..." autoFocus onChange={handleChange} required />
         <span title="Agrega Tarea"><input type="submit" name="cargar" value="➕" id="mas"/></span>
-        <input type="hidden" id="edit-id" />
+        <input type="hidden" id="edit-id"/>
       </form>
     </nav>
     </>

@@ -7,12 +7,14 @@ function TDLApp(){
   const [localS, setLocalS] = useState(localStorage.getItem("toDoListReact"))
   const [db, setDb] = useState(localS ? JSON.parse(localS) : [])
 
+  // css para el logo
   const estilologo = {
     width: "30px",
     filter:"drop-shadow(2px 2px 2px black)",
     margin:"0 5px 0 0"  
   }
 
+  // css para el escrito de version
   const estiloVersion = {
     color:"black",
     fontSize: "11px",
