@@ -1,0 +1,43 @@
+.card {
+    border: thin solid grey;
+    width: 45%;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.75rem;
+    box-shadow: 3px 3px 4px grey;
+}
+.card:hover {
+    cursor:pointer;
+}
+.titulo {
+    margin: 3px;
+}
+.card img {
+    width: 90%;
+}
+.navCard {
+    width: 100%;
+   /* background-color: rgb(75, 72, 72);*/
+    background-color: orangered;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    border-radius: 0 0 0.75rem 0.75rem;
+}
+.Descripcion {
+    width: 90%;
+    margin: 5px 0;
+}
+.btnCard {
+    border: none;
+    width: 30px;
+    background: transparent;
+}
+.btnCard img {
+    width: 60%;
+    filter: drop-shadow(3px 3px 6px black);
+}

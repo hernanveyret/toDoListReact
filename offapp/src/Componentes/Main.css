@@ -1,0 +1,63 @@
+header {
+   background-color:  blue;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 110, 255);
+}
+.btnNav {
+    border: none;
+    margin: 0 5px;
+    background: transparent;
+    padding: 5px;
+}
+.btnNav:hover {
+    cursor: pointer;
+}
+.btnNav img {
+    width: 50%;
+    filter:drop-shadow(3px 3px 5px grey);
+}
+.btnNav img:hover {
+    filter: drop-shadow(3px 3px 6px black);
+}
+section {
+    width: 100%;
+    min-height: 83vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+.whatsAap {
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/whatsaap.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    right: 10px;
+    bottom: 20px;
+    font-size: 0;
+}
+.whatsAap,.flecha:hover {
+    cursor: pointer;
+}
+.flecha {
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/flechaUp.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    right: 10px;
+    bottom: 70px;
+    font-size: 0;
+}
