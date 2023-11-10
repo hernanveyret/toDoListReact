@@ -1,0 +1,103 @@
+{ "ofertas":  [
+  {
+    "id":1,
+    "titulo":"Remera algodon",
+    "imagen":"img/img1.jpg",
+    "talle":"2",
+    "descripcion":"Remera de algodon para bebe, exelente calidad, ojos saltarines",
+    "color":"Azul",
+    "precio":1500,
+    "favorito":false
+  },
+  {
+    "id":2,
+    "titulo":"Remera algodon",
+    "imagen":"img/img2.jpg",
+    "talle":"3",
+    "descripcion":"Remera de algodon para bebe, exelente calidad, ojos saltarines",
+    "color":"Verde",
+    "precio":1500,
+    "favorito":false
+  },
+  {
+    "id":3,
+    "titulo":"Remera algodon",
+    "imagen":"img/img3.jpg",
+    "talle":"4",
+    "descripcion":"Remera de algodon para bebe, exelente calidad, ojos saltarines",
+    "color":"Gris",
+    "precio":1500,
+    "favorito":false
+  },
+  {
+    "id":4,
+    "titulo":"Remera Levi`s",
+    "imagen":"img/img4.jpg",
+    "talle":"S",
+    "descripcion":"Remera de algodon para dama, (detalle) un poco gastada al frente por el sol, talle angosto",
+    "color":"Negro",
+    "precio":2500,
+    "favorito":false
+  },
+  {
+    "id":5,
+    "titulo":"Remera Levi`s",
+    "imagen":"img/img5.jpg",
+    "talle":"M",
+    "descripcion":"Remera de algodon para dama, excelente calidad, talle angosto",
+    "color":"Negro",
+    "precio":3000,
+    "favorito":false
+  },
+  {
+    "id":6,
+    "titulo":"Remera Levi`s",
+    "imagen":"img/img6.jpg",
+    "talle":"M",
+    "descripcion":"Remera de algodon para dama, excelente calidad, talle angosto",
+    "color":"Negro",
+    "precio":3000,
+    "favorito":false
+  },
+  {
+    "id":7,
+    "titulo":"Remera Adiddas",
+    "imagen":"img/img7.jpg",
+    "talle":"S",
+    "descripcion":"Remera para dama, muy buena calidad, talle angosto",
+    "color":"Gris",
+    "precio":3000,
+    "favorito":false
+  },
+  {
+    "id":8,
+    "titulo":"Capri Dama",
+    "imagen":"img/img8.jpg",
+    "talle":"1 y medio",
+    "descripcion":"Capri e lycra elastizada, excelente calidad",
+    "color":"Negro/amarillo",
+    "precio":3500,
+    "favorito":false
+  },
+  {
+    "id":9,
+    "titulo":"Calza Dama",
+    "imagen":"img/img9.jpg",
+    "talle":"1 y medio",
+    "descripcion":"Calza para Dama de lycra elastizada, excelente calidad",
+    "color":"Varios Colores",
+    "precio":4000,
+    "favorito":false
+  },
+  {
+    "id":10,
+    "titulo":"Calza Dama",
+    "imagen":"img/img10.jpg",
+    "talle":"1 y medio",
+    "descripcion":"Calza para Dama de lycra elastizada, excelente calidad",
+    "color":"Negro/Fuxcia",
+    "precio":4000,
+    "favorito":false
+  }
+]
+}
