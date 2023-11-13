@@ -1,28 +1,12 @@
-import React,{ useState } from 'react';
-import FavOffNav from "../img/favOffNav.png";
+import React from 'react';
+import FavOffNav from "../img/fav.png";
 import FavOn from "../img/favOn.png";
+import Compras from "../img/carritoCompras.png";
 import "./cards.css";
 
 import Lupa from "../img/lupa.png"
-const Cards = ({data,idFavorito,db}) => {
-  const [ imagenLupa, setImagenLupa] = useState(null)
+const Cards = ({ openModal,data,idFavorito,ingresarProductos}) => {
   
-  const openModal = (e) => {  
-    const modal = document.getElementById("modal")
-    modal.showModal()
-    let id = e.target.dataset.id
-    const imgLupa = db.filter(e => e.id == id)
-    let imagen = imgLupa[0].imagen
-    setImagenLupa(imagen)
-    console.log(imagenLupa)
-  }
-
-  const closeModal = () => {
-    const modal = document.getElementById("modal")
-    modal.close()
-  }
-
- 
   return (
     <div className="card" key={data.id}>
       <h4 className="titulo">{data.titulo}</h4>
@@ -35,15 +19,9 @@ const Cards = ({data,idFavorito,db}) => {
           <p style={{fontSize:"1.5rem"}}>${data.precio}</p>
           <div className="navCard">
             <button className="btnCard" onClick={idFavorito}>{data.favorito ? <img src={FavOn} data-id={data.id} alt="Ico Home" /> : <img src={FavOffNav} data-id={data.id} alt="Ico Home" />}</button>
-            <button className="btnCard" onClick={openModal}><img src={Lupa} alt="Ico Home" data-id={data.id} /></button>
+            <button className="btnCard" onClick={openModal}><img src={Lupa} alt="Ico lupa" data-id={data.id} /></button>
+            <button className="btnCard" onClick={ingresarProductos}><img src={Compras} alt="Ico Carrito de compras" data-id={data.id} /></button>
           </div>
-
-          <dialog id="modal">
-            
-            <img src={imagenLupa} alt="Imagen Lupa" />
-            <div><button onClick={closeModal}>X</button>  </div>
-            
-          </dialog>
     </div>
   )
 }
