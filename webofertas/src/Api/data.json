@@ -75,13 +75,13 @@
     "imagen":"img/img6.jpg",
     "talle":"M",
     "descripcion":"Remera de algodon para dama, excelente calidad, talle angosto",
-    "color":"Negro",
+    "color":"Rosa",
     "precio":3000,
     "favorito":false
   },
   {
     "id":9,
-    "titulo":"Remera Adiddas",
+    "titulo":"Remera Adidas",
     "imagen":"img/img7.jpg",
     "talle":"S",
     "descripcion":"Remera para dama, muy buena calidad, talle angosto",
@@ -117,6 +117,16 @@
     "descripcion":"Calza para Dama de lycra elastizada, excelente calidad",
     "color":"Negro/Fuxcia",
     "precio":4000,
+    "favorito":false
+  },
+  {
+    "id":13,
+    "titulo":"Short de Dama",
+    "imagen":"img/img16.jpg",
+    "talle":"38 y 40",
+    "descripcion":"Short elastizado para dama, DETALLE, un poco quemado por estar en vidriera",
+    "color":"Celeste Gastado",
+    "precio":3500,
     "favorito":false
   }
 ]

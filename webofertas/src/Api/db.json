@@ -118,6 +118,16 @@
     "color":"Negro/Fuxcia",
     "precio":4000,
     "favorito":false
+  },
+  {
+    "id":13,
+    "titulo":"Short de Dama",
+    "imagen":"img/img16.jpg",
+    "talle":"38 y 40",
+    "descripcion":"Short elastizado para dama, DETALLE, un poco quemado por estar en vidriera",
+    "color":"Celeste Gastado",
+    "precio":3500,
+    "favorito":false
   }
 ]
 }

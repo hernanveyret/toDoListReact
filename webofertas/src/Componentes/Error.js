@@ -10,4 +10,5 @@ const Error = ({msj}) => {
         </div>    
     )
 };
+
 export default Error;

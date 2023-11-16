@@ -7,6 +7,7 @@ import "./cards.css";
 import Lupa from "../img/lupa.png"
 const Cards = ({ openModal,data,idFavorito,ingresarProductos}) => {
   
+  
   return (
     <div className="card" key={data.id}>
       <h4 className="titulo">{data.titulo}</h4>

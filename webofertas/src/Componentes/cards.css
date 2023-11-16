@@ -1,6 +1,6 @@
 .card {
     border: thin solid grey;
-    width: 45%;
+    width: 47%;
     margin: 5px;
     display: flex;
     flex-direction: column;
@@ -28,7 +28,7 @@
 }
 .Descripcion {
     width: 90%;
-    height: 70px;
+    min-height: 70px;
     margin: 5px 0;
     text-align: center;
 }
@@ -39,6 +39,7 @@ p {
     border: none;
     width: 30px;
     background: transparent;
+    z-index: 9;
 }
 .btnCard img {
     width: 60%;
@@ -49,6 +50,6 @@ p {
 }
 @media screen and (min-width: 1024px) {
     .card {
-        width: 15%;
+        width: 20%;
     }
   }

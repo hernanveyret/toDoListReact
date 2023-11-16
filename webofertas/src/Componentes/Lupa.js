@@ -13,4 +13,5 @@ const Lupa = ({closeModal,imgLupa}) => {
    </div>
  )
 };
+
 export default Lupa;
