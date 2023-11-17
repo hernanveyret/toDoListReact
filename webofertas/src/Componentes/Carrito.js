@@ -1,20 +1,28 @@
-import React from 'react';
+import React, { useState} from 'react';
 import ProductoCarrito from "./ProductoCarrito";
 import "./carrito.css"
 
-const Carrito = ({productos,setProductos,cantPares,total,borraProducto}) => {
+const Carrito = ({productos,setProductos,cantPares,total,borraProducto, setCarrito,setHome}) => {
+  const [nombre, setNombre] = useState("");
+
+  const handleNombre = (e) => {
+    setNombre(e)
+  }
   
   const enviarPedido = () => {
     const tel = `541134025499`;
-    let msg =`Mi pedido:\n` ;
+    let msg =`Mi pedido:\n`;
+        msg += `Me llamo ${nombre}\n`
     productos.forEach(e => {
-       msg += `id:${e.id}/${e.titulo} / ${e.color}\n `       
+       msg += `id:${e.id}/${e.titulo} / Talle: ${e.talle} / ${e.color}\n `       
     })
         msg += `Total: $${total}`
 
     const urlTel = `https://api.whatsapp.com/send?phone=${tel}&text=${encodeURIComponent(msg)}`;
     window.open(urlTel,'_blank');
     setProductos([])
+    setCarrito(false)
+    setHome(true)
   }
 
   return (
@@ -28,6 +36,7 @@ const Carrito = ({productos,setProductos,cantPares,total,borraProducto}) => {
         </div>
         <div className="botonera">
           <button onClick={enviarPedido}>ENVIAR PEDIDO</button>
+          <input type="text" name="nombre" placeholder="Nombre" required className="inputName" onChange={(e) => {handleNombre(e.target.value)}}/>
         </div>
         <div className="importe">
           <p>TOTAL</p>

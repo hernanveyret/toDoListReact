@@ -1,10 +1,10 @@
 .contenedorLupa {
     width: 100vw;
-    min-height: 100vh;
+    height: 100vh;
     background-color: rgba(128, 128, 128, 0.74);
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     position:fixed;
     top: 0;
     left: 0;

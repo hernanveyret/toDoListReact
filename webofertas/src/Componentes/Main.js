@@ -4,12 +4,15 @@ import Error from './Error';
 import Lupa from './Lupa';
 import Carrito from './Carrito';
 import CheckCompra from './CheckCompra';
+import Info from './Info';
 import './Main.css';
 import HomeFalse from "../img/homeFalse.png";
 import HomeTrue from "../img/homeTrue.png";
 import FavOn from "../img/favOn.png";
 import CarritoOf from '../img/carritoOf.png';
 import CarritoOn from '../img/carritoOn.png';
+import InfoOf from '../img/infoOf.png';
+import InfoOn from '../img/infoOn.png';
 
 const Main = () => {
   const [home, setHome] = useState(true)
@@ -25,6 +28,7 @@ const Main = () => {
   const [productos, setProductos] = useState([])
   const [total, setTotal] = useState(0)
   const [checkproducto, setCheckproducto] = useState(false)
+  const [info, setInfo] = useState(false);
 
   //const url = "http://localhost:5000/ofertas"
   
@@ -127,20 +131,22 @@ favoritos.forEach(e => {
         <h1 id="cabecera">OfertApp</h1>
       </header>
       <nav>
-        <button className="btnNav" onClick={() => {setHome(true); setFav(false); setCarrito(false)}} >{home ? <img src={HomeTrue} alt="Ico Home true" />: <img src={HomeFalse} alt="Ico Home False" />}</button>
-        <button className="btnNav" onClick={() => {setFav(true); setHome(false); setCarrito(false)}} ><img src={FavOn} alt="Ico Home" />{favoritos.length}</button>
-        <button style={{color:"red"}} className="btnNav" onClick={() => {setCarrito(true); setHome(false); setFav(false)}}>{ carrito ? <img src={CarritoOn} alt="icono del carrito"/> : <img src={CarritoOf} alt="icono del carrito"/>}{productos.length}</button>
+        <button className="btnNav" onClick={() => {setHome(true); setFav(false); setCarrito(false);setInfo(false)}} ><span title="Pagina principal">{home ? <img src={HomeTrue} alt="Ico Home true" />: <img src={HomeFalse} alt="Ico Home False" />}</span></button>
+        <button className="btnNav" onClick={() => {setFav(true); setHome(false); setCarrito(false);setInfo(false)}} ><span title="Tus favoritos"><img src={FavOn} alt="Ico Home" />{favoritos.length}</span></button>
+        <button style={{color:"red"}} className="btnNav" onClick={() => {setCarrito(true); setHome(false); setFav(false)}}><span title="Tu Pedido">{ carrito ? <img src={CarritoOn} alt="icono del carrito"/> : <img src={CarritoOf} alt="icono del carrito"/>}{productos.length}</span></button>
+        <button className="btnNav" onClick={() => {setInfo(!info)}} ><span title="Informacion">{info ? <img src={InfoOn} alt="Ico Info" />:<img src={InfoOf} alt="Ico Info" />}</span></button>
       </nav>
       <section id="main">
-        { carrito && <Carrito productos={productos} setProductos={setProductos} cantPares={productos.length} total={total} borraProducto={borraProducto}/>}
+        { carrito && <Carrito productos={productos} setProductos={setProductos} cantPares={productos.length} total={total} borraProducto={borraProducto} setCarrito={setCarrito} setHome={setHome}/>}
         { lupa && <Lupa closeModal={closeModal} imgLupa={imgLupa}/> }
         { home && db.map(e => (<Cards data={e} key={e.id} idFavorito={idFavorito} openModal={openModal} ingresarProductos={ingresarProductos}/>)) }
         { Fav && favoritos.map(e => (<Cards data={e} key={e.id} idFavorito={idFavorito} openModal={openModal} ingresarProductos={ingresarProductos}/>)) }
         { error && <Error msj={error} /> }
-        { checkproducto && <CheckCompra setCheckproducto={setCheckproducto}/> } 
+        { checkproducto && <CheckCompra setCheckproducto={setCheckproducto}/> }
+        { info && <Info setInfo={setInfo}/> }
       </section>
       <a href="#cabecera" className="flecha">Flecha</a>
-      <a href="https://wa.me/541134025499" target="_blanck" className="whatsAap">WhatAaap</a>
+      <a href="https://wa.me/541134025499" target="_blanck" className="whatsAap"><span title="Envianos tu consulta">WhatAaap</span></a>
     </>
   )
 } // 🏠 ⭐🗑️

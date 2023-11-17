@@ -1,6 +1,16 @@
 [   
   {
     "id":1,
+    "titulo":"Baberos de tela",
+    "imagen":"img/img25.jpg",
+    "talle":"Unico",
+    "descripcion":"Baberos de tela, muy buena calidad",
+    "color":"varios",
+    "precio":800,
+    "favorito":false
+  },
+  {
+    "id":2,
     "titulo":"Remera algodon",
     "imagen":"img/img1.jpg",
     "talle":"2",
@@ -10,7 +20,7 @@
     "favorito":false
   },
   {
-    "id":2,
+    "id":3,
     "titulo":"Remera algodon",
     "imagen":"img/img2.jpg",
     "talle":"3",
@@ -20,7 +30,7 @@
     "favorito":false
   },
   {
-    "id":3,
+    "id":4,
     "titulo":"Remera algodon",
     "imagen":"img/img3.jpg",
     "talle":"4",
@@ -30,7 +40,7 @@
     "favorito":false
   },
   {
-    "id":4,
+    "id":5,
     "titulo":"Remera nena",
     "imagen":"img/img11.jpg",
     "talle":"6",
@@ -40,7 +50,17 @@
     "favorito":false
   },
   {
-    "id":5,
+    "id":6,
+    "titulo":"Musculosa para chicos",
+    "imagen":"img/img17.jpg",
+    "talle":"4",
+    "descripcion":"Musculosa para chicos de algodon, estampada",
+    "color":"Azul",
+    "precio":1000,
+    "favorito":false
+  },
+  {
+    "id":7,
     "titulo":"Musculosa nena",
     "imagen":"img/img12.jpg",
     "talle":"6",
@@ -50,7 +70,67 @@
     "favorito":false
   },
   {
-    "id":6,
+    "id":8,
+    "titulo":"Short de Nena",
+    "imagen":"img/img19.jpg",
+    "talle":"16",
+    "descripcion":"Short para nena, de algodon y puntilla, hermosa calidad",
+    "color":"Beige",
+    "precio":1500,
+    "favorito":false
+  },
+  {
+    "id":9,
+    "titulo":"Short de Nena",
+    "imagen":"img/img20.jpg",
+    "talle":"16",
+    "descripcion":"Short para nena, de algodon y puntilla, hermosa calidad",
+    "color":"Rosa",
+    "precio":1500,
+    "favorito":false
+  },
+  {
+    "id":10,
+    "titulo":"Short de Nena",
+    "imagen":"img/img20.jpg",
+    "talle":"14",
+    "descripcion":"Short para nena, de algodon y puntilla, hermosa calidad",
+    "color":"Rosa",
+    "precio":1500,
+    "favorito":false
+  },
+  {
+    "id":11,
+    "titulo":"Short de algodon",
+    "imagen":"img/img21.jpg",
+    "talle":"?",
+    "descripcion":"Short de algodon rustico para chicos, muy linda calidad",
+    "color":"Negro",
+    "precio":1500,
+    "favorito":false
+  },
+  {
+    "id":12,
+    "titulo":"Short de algodon",
+    "imagen":"img/img21.jpg",
+    "talle":"?",
+    "descripcion":"Short de algodon rustico para chicos, muy linda calidad",
+    "color":"Negro",
+    "precio":1500,
+    "favorito":false
+  },
+  {
+    "id":13,
+    "titulo":"Short de algodon",
+    "imagen":"img/img22.jpg",
+    "talle":"?",
+    "descripcion":"Short de algodon rustico para chicos, muy linda calidad",
+    "color":"Verde",
+    "precio":1500,
+    "favorito":false
+  },
+  {
+    "id":14,
     "titulo":"Remera Levi`s",
     "imagen":"img/img4.jpg",
     "talle":"S",
@@ -60,7 +140,7 @@
     "favorito":false
   },
   {
-    "id":7,
+    "id":15,
     "titulo":"Remera Levi`s",
     "imagen":"img/img5.jpg",
     "talle":"M",
@@ -70,7 +150,7 @@
     "favorito":false
   },
   {
-    "id":8,
+    "id":16,
     "titulo":"Remera Levi`s",
     "imagen":"img/img6.jpg",
     "talle":"M",
@@ -80,7 +160,7 @@
     "favorito":false
   },
   {
-    "id":9,
+    "id":17,
     "titulo":"Remera Adidas",
     "imagen":"img/img7.jpg",
     "talle":"S",
@@ -90,7 +170,7 @@
     "favorito":false
   },
   {
-    "id":10,
+    "id":18,
     "titulo":"Capri Dama",
     "imagen":"img/img8.jpg",
     "talle":"1 y medio",
@@ -100,7 +180,7 @@
     "favorito":false
   },
   {
-    "id":11,
+    "id":19,
     "titulo":"Calza Dama",
     "imagen":"img/img9.jpg",
     "talle":"1 y medio",
@@ -110,7 +190,7 @@
     "favorito":false
   },
   {
-    "id":12,
+    "id":20,
     "titulo":"Calza Dama",
     "imagen":"img/img10.jpg",
     "talle":"1 y medio",
@@ -120,14 +200,83 @@
     "favorito":false
   },
   {
-    "id":13,
+    "id":21,
     "titulo":"Short de Dama",
     "imagen":"img/img16.jpg",
-    "talle":"38 y 40",
+    "talle":"38",
     "descripcion":"Short elastizado para dama, DETALLE, un poco quemado por estar en vidriera",
     "color":"Celeste Gastado",
     "precio":3500,
     "favorito":false
+  },
+  {
+    "id":22,
+    "titulo":"Short de Dama",
+    "imagen":"img/img16.jpg",
+    "talle":"40",
+    "descripcion":"Short elastizado para dama, DETALLE, un poco quemado por estar en vidriera",
+    "color":"Celeste Gastado",
+    "precio":3500,
+    "favorito":false
+  },
+  {
+    "id":23,
+    "titulo":"Chinela de Goma",
+    "imagen":"img/img18.jpg",
+    "talle":"39/40",
+    "descripcion":"Chinela de goma, muy buena calidad",
+    "color":"Rosa/Blanca",
+    "precio":2500,
+    "favorito":false
+  },
+  {
+    "id":24,
+    "titulo":"Ojota de Goma",
+    "imagen":"img/img26.jpg",
+    "talle":"37",
+    "descripcion":"Ojota de goma floreada, muy buena calidad",
+    "color":"Violeta",
+    "precio":2000,
+    "favorito":false
+  },
+  {
+    "id":25,
+    "titulo":"Medias para chicos",
+    "imagen":"img/img23.jpg",
+    "talle":"3",
+    "descripcion":"Medias COACOA para chicos, muy buena calidad 2 x",
+    "color":"Rallas / Azul",
+    "precio":1500,
+    "favorito":false
+  },
+  {
+    "id":26,
+    "titulo":"Medias Floyd",
+    "imagen":"img/img24.jpg",
+    "talle":"7",
+    "descripcion":"Media tipo 3/4 de algodon",
+    "color":"Amarillo/Violeta",
+    "precio":1500,
+    "favorito":false
+  },
+  {
+    "id":27,
+    "titulo":"Gomon para chicos",
+    "imagen":"img/img15.jpg",
+    "talle":"27",
+    "descripcion":"Gomon para chicos",
+    "color":"Negro",
+    "precio":2000,
+    "favorito":false
+  },
+  {
+    "id":28,
+    "titulo":"Gomon para chicos",
+    "imagen":"img/img14.jpg",
+    "talle":"31",
+    "descripcion":"Gomon para chicos",
+    "color":"Rosa",
+    "precio":2000,
+    "favorito":false
   }
 ]
-

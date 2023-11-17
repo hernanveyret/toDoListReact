@@ -79,11 +79,10 @@
 }
 .botonera button {
     padding: 10px;
-    background-color: black;
+    background-color: #282c34;
     color: white;
-    border: none;
-    border-radius: 0.75rem;
-    font-weight: 900;
+    cursor:pointer;
+    margin: 10px 0;
     z-index: 10px;
 }
 .botonera button:hover {
@@ -107,6 +106,13 @@
 .btnBorrar:hover {
     cursor: pointer;
     filter: drop-shadow(2px 2px 4px grey);
+}
+.inputName {
+    margin-left: 10px;
+    padding: 10px;
+    border: thin solid grey;
+    border-radius: 0.25rem;
+    width: 80px;
 }
 @media screen and (min-width: 1024px) {
     .imgProducto img {
